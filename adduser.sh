@@ -130,3 +130,8 @@ fi
 
 #**************************************************************
 passwd -d $NAME;
+
+echo ""
+echo "All done! Run \"ssh $NAME@$(hostname -I | awk '{print $1;}')\" on your computer to connect to this server as $NAME."
+echo "Please remember to create a password with \"passwd\". User $NAME doesn't have a password. "
+echo ""
